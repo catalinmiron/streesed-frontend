@@ -7,8 +7,7 @@
 
 __DEVELOPMENT__
 
-`npm start`
-`open localhost:3000`
+`npm run-script watch`
 
 __PRODUCTION__
 
