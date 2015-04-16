@@ -20,6 +20,8 @@ module.exports = function(options) {
     new ExtractTextPlugin('[name].css')
   ];
 
+  console.log(options);
+
   if(options.hotComponents) {
     plugins.push(new webpack.HotModuleReplacementPlugin());
   }
@@ -30,8 +32,9 @@ module.exports = function(options) {
     plugins: plugins,
 
     output: {
-      path: path.join(__dirname, 'build'),
-      publicPath: options.devServer ? '' : '/build/',
+      path: options.devServer ? path.join(__dirname, 'build')
+                              : path.join(__dirname, 'dist/build') ,
+      publicPath: options.devServer ? '/build/' : 'dist/build/',
       filename: 'bundle.js'
     },
 
@@ -50,12 +53,12 @@ module.exports = function(options) {
       }, {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader', {
-          publicPath: ''
+          publicPath: '../build/'
         })
       }, {
         test: /\.less$/,
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader!less-loader', {
-          publicPath: ''
+          publicPath: '../build/'
         })
       }, {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,

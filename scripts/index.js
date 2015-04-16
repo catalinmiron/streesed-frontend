@@ -3,7 +3,7 @@ import Mood from "./components/mood";
 
 // API URL's constants
 
-window.API_URL = "http://localhost:5000/api";
+window.API_URL = "https://stressed-app.herokuapp.com/api";
 window.STATUSES = window.API_URL + "/statuses/";
 window.TIMESERIES = window.API_URL + "/timeseries/";
 
