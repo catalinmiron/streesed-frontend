@@ -1,14 +1,13 @@
 {
-  "name": "react-hot-boilerplate",
-  "version": "1.0.0",
-  "description": "Boilerplate for ReactJS project with hot code reloading",
+  "name": "StressedApp",
+  "version": "0.0.1",
+  "description": "For stressed people",
   "scripts": {
     "watch": "webpack --config webpack.config.js --watch",
     "build": "webpack --config webpack.config.js --progress --profile --colors"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/gaearon/react-hot-boilerplate.git"
+    "type": "git"
   },
   "keywords": [
     "react",
@@ -22,12 +21,9 @@
     "edit",
     "webpack"
   ],
-  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "author": "XXX",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gaearon/react-hot-boilerplate/issues"
-  },
-  "homepage": "https://github.com/gaearon/react-hot-boilerplate",
+  "homepage": "http://stressed-app.herokuapp.com/",
   "devDependencies": {
     "babel-core": "^4.7.4",
     "babel-loader": "^4.1.0",
